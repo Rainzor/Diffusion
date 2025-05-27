@@ -1,6 +1,5 @@
 # Ignore Files and Directories
 models
-examples
 *.safetensors
 *.ckpt
 *.bin

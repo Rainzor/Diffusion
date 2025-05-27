@@ -1,0 +1,6 @@
+[submodule "examples/diffusers"]
+	path = examples/diffusers
+	url = https://github.com/huggingface/diffusers.git
+[submodule "examples/DL-Demos"]
+	path = examples/DL-Demos
+	url = https://github.com/SingleZombie/DL-Demos.git
