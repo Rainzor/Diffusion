@@ -1,0 +1,10 @@
+# Ignore Files and Directories
+models
+examples
+*.safetensors
+*.ckpt
+*.bin
+.vscode/
+.history/
+*.pyc
+__pycache__/
