@@ -4,3 +4,6 @@
 [submodule "examples/DL-Demos"]
 	path = examples/DL-Demos
 	url = https://github.com/SingleZombie/DL-Demos.git
+[submodule "examples/deeplearning"]
+	path = examples/deeplearning
+	url = https://github.com/Rainzor/Deep-Learning.git
