@@ -7,3 +7,9 @@
 [submodule "examples/deeplearning"]
 	path = examples/deeplearning
 	url = https://github.com/Rainzor/Deep-Learning.git
+[submodule "examples/ddpm"]
+	path = examples/ddpm
+	url = https://github.com/lucidrains/denoising-diffusion-pytorch.git
+[submodule "examples/flow-matching"]
+	path = examples/flow-matching
+	url = https://github.com/atong01/conditional-flow-matching.git

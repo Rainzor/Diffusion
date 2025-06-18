@@ -3,6 +3,8 @@ models
 *.safetensors
 *.ckpt
 *.bin
+*.pth
+*.pt
 .vscode/
 .history/
 *.pyc

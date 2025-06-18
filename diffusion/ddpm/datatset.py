@@ -1,6 +1,6 @@
 import torchvision
 from torch.utils.data import DataLoader, Dataset
-from torchvision.transforms import ToTensor, Normalize, Compose
+from torchvision.transforms import ToTensor, Lambda, Compose
 
 class DDPMDataset(Dataset):
     """
@@ -8,13 +8,11 @@ class DDPMDataset(Dataset):
     This class supports loading datasets like MNIST and CIFAR10.
     """
 
-    def __init__(self, dataset_name, batch_size=64, num_workers=4):
+    def __init__(self, dataset_name='MNIST'):
         self.dataset_name = dataset_name
-        self.batch_size = batch_size
-        self.num_workers = num_workers
         self.transform = Compose([
             ToTensor(),
-            Normalize((0.5,), (0.5,))
+            Lambda(lambda x: (x - 0.5) * 2) # Normalize to [-1, 1]
         ])
         self.dataset = self._load_dataset()
 
